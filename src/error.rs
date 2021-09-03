@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with substrate-subxt.  If not, see <http://www.gnu.org/licenses/>.
 
-use jsonrpsee_ws_client::Error as RequestError;
+use jsonrpsee_types::Error as RequestError;
 use sp_core::crypto::SecretStringError;
 use sp_runtime::{
     transaction_validity::TransactionValidityError,
@@ -140,6 +140,10 @@ impl RuntimeError {
             DispatchError::ConsumerRemaining => Ok(Self::ConsumerRemaining),
             DispatchError::NoProviders => Ok(Self::NoProviders),
             DispatchError::Other(msg) => Ok(Self::Other(msg.into())),
+            DispatchError::Arithmetic(_err) => {
+                Ok(Self::Other("Arithmetic Err".to_string()))
+            }
+            DispatchError::Token(_err) => Ok(Self::Other("Token Err".to_string())),
         }
     }
 }
