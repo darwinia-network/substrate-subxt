@@ -2655,9 +2655,9 @@ dependencies = [
 
 [[package]]
 name = "jsonrpsee-http-client"
-version = "0.3.0"
+version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "52819604ca75933e88f51a31ef2e963fc5e3b0e67c5e4e7cd1bcf866e28b6af2"
+checksum = "aa96aee30f40b97f1831e6ab7ba63d65b73d73ae418e1437bae2a47bbdf3aff6"
 dependencies = [
  "async-trait",
  "fnv",
@@ -2679,9 +2679,9 @@ dependencies = [
 
 [[package]]
 name = "jsonrpsee-proc-macros"
-version = "0.3.0"
+version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f37924e16300e249a52a22cabb5632f846dc9760b39355f5e8bc70cd23dc6300"
+checksum = "8edb341d35279b59c79d7fe9e060a51aec29d45af99cc7c72ea7caa350fa71a4"
 dependencies = [
  "Inflector",
  "bae",
@@ -2693,9 +2693,9 @@ dependencies = [
 
 [[package]]
 name = "jsonrpsee-types"
-version = "0.3.0"
+version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d67724d368c59e08b557a516cf8fcc51100e7a708850f502e1044b151fe89788"
+checksum = "4cc738fd55b676ada3271ef7c383a14a0867a2a88b0fa941311bf5fc0a29d498"
 dependencies = [
  "async-trait",
  "beef",
@@ -2711,9 +2711,9 @@ dependencies = [
 
 [[package]]
 name = "jsonrpsee-utils"
-version = "0.3.0"
+version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0df2c313adda0418a281cea99d1b9e3c22714d2b9139e9adb1543b4a40ee0458"
+checksum = "d674f0eafa768a66c5cd3ad3131c5d966b1425a475bc87be84acc6dc48321b01"
 dependencies = [
  "futures-util",
  "hyper 0.13.10",
@@ -2723,9 +2723,9 @@ dependencies = [
 
 [[package]]
 name = "jsonrpsee-ws-client"
-version = "0.3.0"
+version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8e2834b6e7f57ce9a4412ed4d6dc95125d2c8612e68f86b9d9a07369164e4198"
+checksum = "9841352dbecf4c2ed5dc71698df9f1660262ae4e0b610e968602529bdbcf7b30"
 dependencies = [
  "async-trait",
  "fnv",
