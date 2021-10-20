@@ -363,7 +363,7 @@ impl<T: Runtime> Client<T> {
         key: StorageKey,
         hash: Option<T::Hash>,
     ) -> Result<Option<V>, Error> {
-        if let Some(mut data) = self.rpc.storage(&key, hash).await? {
+        if let Some(data) = self.rpc.storage(&key, hash).await? {
             Ok(Some(Decode::decode(&mut &data.0[..])?))
         } else {
             Ok(None)

@@ -29,10 +29,10 @@ codec = { package = "parity-scale-codec", version = "2.1", default-features = fa
 dyn-clone = "1.0.4"
 futures = "0.3.13"
 hex = "0.4.3"
-jsonrpsee-proc-macros = "0.3.0"
-jsonrpsee-ws-client = { version = "0.3.0", default-features = false }
-jsonrpsee-http-client = { version = "0.3.0", default-features = false }
-jsonrpsee-types = "0.3.0"
+jsonrpsee-proc-macros = "0.3.1"
+jsonrpsee-ws-client = { version = "0.3.1", default-features = false }
+jsonrpsee-http-client = { version = "0.3.1", default-features = false }
+jsonrpsee-types = "0.3.1"
 log = "0.4.14"
 num-traits = { version = "0.2.14", default-features = false }
 serde = { version = "1.0.124", features = ["derive"] }
@@ -43,17 +43,17 @@ url = "2.2.1"
 substrate-subxt-client = { version = "0.7.0", path = "client", optional = true }
 substrate-subxt-proc-macro = { version = "0.15.0", path = "proc-macro" }
 
-sp-application-crypto = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.4" }
-sp-core               = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.4" }
-sp-rpc                = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.4" }
-sp-runtime            = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.4" }
-sp-std                = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.4" }
-sp-version            = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.4" }
+sp-application-crypto = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.5" }
+sp-core               = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.5" }
+sp-rpc                = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.5" }
+sp-runtime            = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.5" }
+sp-std                = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.5" }
+sp-version            = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.5" }
 
-frame-metadata = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.4" }
-frame-support  = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.4" }
-pallet-indices = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.4" }
-pallet-staking = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.4" }
+frame-metadata = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.5" }
+frame-support  = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.5" }
+pallet-indices = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.5" }
+pallet-staking = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.5" }
 
 
 [dev-dependencies]
@@ -64,6 +64,6 @@ tempdir = "0.3.7"
 wabt = "0.10.0"
 which = "4.0.2"
 
-sp-keyring      = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.4" }
-frame-system    = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.4" }
-pallet-balances = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.4" }
+sp-keyring      = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.5" }
+frame-system    = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.5" }
+pallet-balances = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.5" }
