@@ -61,7 +61,10 @@ use sp_rpc::{
     number::NumberOrHex,
 };
 use sp_runtime::{
-    generic::Block,
+    generic::{
+        Block,
+        SignedBlock,
+    },
     traits::Hash,
 };
 use sp_version::RuntimeVersion;
@@ -85,18 +88,6 @@ use crate::{
         SystemEvents,
     },
 };
-
-pub type ConsensusEngineId = [u8; 4];
-pub type EncodedJustification = Vec<u8>;
-type Justification = (ConsensusEngineId, EncodedJustification);
-type Justifications = Vec<Justification>;
-
-#[derive(PartialEq, Eq, Clone, Encode, Decode, Debug, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct SignedBlock<Block> {
-    pub block: Block,
-    pub justifications: Option<Justifications>,
-}
 
 pub type ChainBlock<T> =
     SignedBlock<Block<<T as System>::Header, <T as System>::Extrinsic>>;
@@ -237,9 +228,21 @@ impl From<WsClient> for RpcClient {
     }
 }
 
+impl From<Arc<WsClient>> for RpcClient {
+    fn from(client: Arc<WsClient>) -> Self {
+        RpcClient::WebSocket(client)
+    }
+}
+
 impl From<HttpClient> for RpcClient {
     fn from(client: HttpClient) -> Self {
         RpcClient::Http(Arc::new(client))
+    }
+}
+
+impl From<Arc<HttpClient>> for RpcClient {
+    fn from(client: Arc<HttpClient>) -> Self {
+        RpcClient::Http(client)
     }
 }
 

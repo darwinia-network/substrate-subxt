@@ -1,7 +1,10 @@
 [package]
 name = "substrate-subxt-proc-macro"
 version = "0.15.3"
-authors = ["David Craven <david@craven.ch>", "Parity Technologies <admin@parity.io>"]
+authors = [
+    "David Craven <david@craven.ch>",
+    "Parity Technologies <admin@parity.io>",
+]
 edition = "2018"
 autotests = false
 
@@ -32,7 +35,7 @@ pretty_assertions = "0.6.1"
 substrate-subxt = { path = ".." }
 trybuild = "1.0.38"
 
-sp-keyring      = { git = "https://github.com/darwinia-network/substrate.git", branch = "main" }
+sp-keyring      = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.6" }
 
 [[test]]
 name = "balances"
