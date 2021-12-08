@@ -23,15 +23,15 @@ log = "0.4.13"
 serde_json = "1.0.61"
 thiserror = "1.0.23"
 
-sc-client-db = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.6-1" }
-sp-keyring   = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.6-1" }
-sc-network   = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.6-1", default-features = false }
-sc-service   = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.6-1", default-features = false }
+sc-client-db = { git = "https://github.com/darwinia-network/substrate.git", branch = "darwinia-v0.11.7" }
+sp-keyring   = { git = "https://github.com/darwinia-network/substrate.git", branch = "darwinia-v0.11.7" }
+sc-network   = { git = "https://github.com/darwinia-network/substrate.git", branch = "darwinia-v0.11.7", default-features = false }
+sc-service   = { git = "https://github.com/darwinia-network/substrate.git", branch = "darwinia-v0.11.7", default-features = false }
 
 
 
 [target.'cfg(target_arch="x86_64")'.dependencies]
-sc-service = { git = "https://github.com/darwinia-network/substrate.git", tag = "darwinia-v0.11.6-1", default-features = false, features = ["wasmtime"] }
+sc-service = { git = "https://github.com/darwinia-network/substrate.git", branch = "darwinia-v0.11.7", default-features = false, features = ["wasmtime"] }
 
 [dev-dependencies]
 async-std = { version = "1.8.0", features = ["attributes"] }
